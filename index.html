@@ -1,0 +1,45 @@
+
+    <!DOCTYPE html>
+    <html>
+    <title>系统信息提取与展示</title>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="icon" href="https://www.bos.xyz/vizbim/img/redblock.ico" type="img/x-ico"/>
+        <link rel="stylesheet" href="https://www.bos.xyz/vizbim/fontawesome5.4.1/css/all.css">
+        <link rel="stylesheet" href="https://www.bos.xyz/vizbim/BIMWINNER.viewer.min.css"/>
+        <link rel="stylesheet" href="https://www.bos.xyz/vizbim/layui/css/layui.css"/>
+    </head>
+    <body style="overflow-y: hidden">
+    <div id="viewport" ></div>
+    <div id="tree"
+        style="width: 180px; position: absolute; height: 400px;top:80px; left:30px;"></div>
+
+    <script type="text/javascript" src="https://www.bos.xyz/vizbim/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.bos.xyz/vizbim/bootstrap-treeview.min.js"></script>
+    <script type="text/javascript" src="https://www.bos.xyz/vizbim/spectrum.js"></script>
+    <script type="text/javascript" src="https://www.bos.xyz/vizbim/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://www.bos.xyz/vizbim/three.min.js"></script>
+    <script type="text/javascript" src="https://www.bos.xyz/vizbim/jszip.min.js"></script>
+    <script type="text/javascript" src="https://www.bos.xyz/vizbim/BIMWINNER.viewer.min.js"></script>
+    <script type="text/javascript" src="https://www.bos.xyz/vizbim/layui/layui.js"></script>
+    <script type="text/javascript" src='https://www.bos.xyz/vizbim/html2canvas.min.js'></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="data.json?callback=data1"></script>
+    <script type="text/javascript">
+
+    //  配置三维主对象参数
+    const op = {
+        viewport: "viewport",
+        devcode: "bca8aff0c925e3275f58a9bbbe11e59e",
+        baseaddress: 'https://api.bos.xyz/',
+        viewController: false        //不加载左上角视图球
+    };
+    // 初始化主对象
+    const vizbim = new BIMWINNER.Viewer(op);
+    const filekey = "79428850"; // 模型文件key
+    // 运行主函数
+    init(filekey); 
+
+    </script>
+    </body>
+    </html>
