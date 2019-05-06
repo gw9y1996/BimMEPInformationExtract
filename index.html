@@ -8,9 +8,10 @@
         <link rel="stylesheet" href="https://www.bos.xyz/vizbim/fontawesome5.4.1/css/all.css">
         <link rel="stylesheet" href="https://www.bos.xyz/vizbim/BIMWINNER.viewer.min.css"/>
         <link rel="stylesheet" href="https://www.bos.xyz/vizbim/layui/css/layui.css"/>
+        <link rel="stylesheet" href="style.css"/>
     </head>
     <body style="overflow-y: hidden">
-    <div id="viewport" ></div>
+    <div id="viewport" style="width: 1920px; height: 1080px;" ></div>
     <div id="tree"
         style="width: 180px; position: absolute; height: 400px;top:80px; left:30px;"></div>
 
@@ -36,7 +37,7 @@
     };
     // 初始化主对象
     const vizbim = new BIMWINNER.Viewer(op);
-    const filekey = "79428850"; // 模型文件key
+    const filekey = "93929470"; // 模型文件key
     // 运行主函数
     init(filekey); 
 

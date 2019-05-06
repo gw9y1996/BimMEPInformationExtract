@@ -1,0 +1,53 @@
+.lyButton{
+    background-color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100px;
+}
+#container{
+    outline-color : white ;
+    draggable="true";
+    opacity:0.75;
+    border-radius:15px;
+    background-color: #808080;
+    border-style: groove;
+    position: absolute;
+    height: 260px;
+    width: 280px;
+    overflow-y: hidden;
+    top: 70%;
+    left: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.layui-form-label{
+    width: 70px;
+    padding: 9px 5px;
+}
+.layui-input-block{
+    margin-left: 90px;
+}
+.layui-input-inline{
+    margin-left: 10px;
+    position: absolute;
+}
+
+.descriptionContainer{
+    font-size:16px;
+    margin-bottom: 0;
+    left:350px;
+    top:10px;
+}
+.layui-form-item{
+    width: 200px;
+}
+.ayui-form-mid .layui-word-aux{
+    position: absolute;
+    left: 210px;
+}
+.layui-form-select dl {
+    max-height : 150px;
+    max-width: 160px;
+}
